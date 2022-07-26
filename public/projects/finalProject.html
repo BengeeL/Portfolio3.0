@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Benjamin Lefebvre 301234587 - Final Project -->
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Term Project - Benjamin Lefebvre</title>
+
+    <!-- Style sheets -->
+    <link media="only screen and (min-width:830px)" href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link media="only screen and (max-width:829px)" href="../styles/mobileStyle.css" rel="stylesheet" type="text/css">
+    <link media="print" href="../styles/printerStyle.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="allPage">
+        <nav>
+            <a href="../index.html"><img class="logo" src="../images/Logo.svg"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul>
+                <li id="removeMobile"><a href="../index.html"><img id="logo" src="../images/Logo.svg"></a></li>
+                <li><a href="../home.html"><img src="../images/Home.svg"></a></li>
+                <li><a href="../portfolio.html"><img src="../images/Portfolio.svg"></a></li>
+                <li><a href="../about.html"><img src="../images/About me.svg"></a></li>
+                <li><a href="../blog.html"><img src="../images/Blog.svg"></a></li>
+                <li id="contactBtm"><a href="../contact.html"><img src="../images/Contact me.svg"></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="projectPage">
+                <h1 style="color:#FDCEAA">Final Project</h1>
+                <p>This website was built as part of my final project during my Web Interface Design course at Centennial College.</p>
+                <div id="finalP"></div>
+                <p>On this page I decided to include anything requested like a click map that I didn't need somewhere on my website yet. </p>
+                
+                <h2>Pricing</h2>
+                <table>
+                    <tr>
+                        <th>Work</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Basic Website Creation</td>
+                        <td>1-2 weeks</td>
+                        <td>200$</td>
+                    </tr>
+                    <tr>
+                        <td>Regular Website Creation</td>
+                        <td>2-3 weeks</td>
+                        <td>400$</td>
+                    </tr>
+                    <tr>
+                        <td>Complete Website Creation</td>
+                        <td>1-2 months</td>
+                        <td>800$</td>
+                    </tr>
+                    <tr>
+                        <td>UI design services</td>
+                        <td>1-2 weeks</td>
+                        <td>200$</td>
+                    </tr>
+                </table>
+                
+                <h2>Additional form</h2>
+                <form action="mailto:blefebv1@mycentennialcollege.com">
+                    <fieldset>
+                        <legend>Sign In!</legend>
+                        <label for="id">ID</label><br>
+                        <input type="text" id="id" tabindex="1">
+                        <br><label for="pwd">Password</label><br>
+                        <input type="password" id="pwd" tabindex="2">
+                    </fieldset>
+                        <br>
+                        <fieldset>
+                          <legend>Reason for contacting me</legend>
+                      
+                          <input type="radio" id="Appointment" name="contactreason" tabindex="3">
+                          <label for="Appointment">Appointment</label><br/>
+                      
+                          <input type="radio" id="Contract" name="contactreason" tabindex="4">
+                          <label for="Contract">Contract</label><br/>
+                      
+                          <input type="radio" id="Other" name="contactreason" tabindex="5">
+                          <label for="Other">Other</label>
+
+                          <br>
+                          <p>How long would you need me? (if applicable)</p>
+                          <input type="number" min="1" max="100" value="1" id="duration" tabindex="6">
+                          <label for="duration"> days.</label><br/>
+                        </fieldset>
+                        <br>
+                        <label for="available">When are you free?</label>
+                        <input type="date" id="available" tabindex="7">
+
+                        <br><input type="submit" id="submit" name="submit" value="Send" tabindex="8">
+                    <input type="reset" id="reset" name="reset" value="Clear" tabindex="9">
+                </form>
+                <br>
+                <h2>List item with image</h2>
+                <p>This website is a result of </p>
+                <ul id="bulletImage">
+                    <li>Simplicity</li>
+                    <li>Flat design</li>
+                    <li>Short animation</li>
+                    <li>Colorfull colors</li>
+                    <li>Elegant rounded design</li>
+                </ul>
+
+                <h2>Click Map</h2>
+
+                <img src="../images/torontoMap.png" usemap="#image-map">
+
+                <map name="image-map">
+                    <area target="_blank" alt="HaltonWiki" title="HaltonWiki" href="https://en.wikipedia.org/wiki/Regional_Municipality_of_Halton" coords="102,304,3,368,78,513,57,524,63,541,89,536,151,501,185,472,175,448,167,447,136,397,145,388" shape="poly">
+                    <area target="_blank" alt="PeelWiki" title="PeelWiki" href="https://en.wikipedia.org/wiki/Regional_Municipality_of_Peel" coords="58,211,89,190,214,192,231,380,224,388,228,404,235,404,231,412,233,425,230,436,190,471,175,442,169,445,141,397,150,390" shape="poly">
+                    <area target="_blank" alt="TorontoWiki" title="TorontoWiki" href="https://en.wikipedia.org/wiki/York,_Toronto" coords="217,195,229,332,415,330,416,126,488,126,488,73,387,69,363,80,357,122,341,128,310,176,269,189" shape="poly">
+                    <area target="_blank" alt="YorkWiki" title="YorkWiki" href="https://en.wikipedia.org/wiki/Toronto" coords="230,336,416,336,415,357,427,373,301,437,287,422,237,433" shape="poly">
+                    <area target="_blank" alt="Durham Toronto" title="Durham Toronto" href="https://en.wikipedia.org/wiki/Regional_Municipality_of_Durham" coords="530,2,553,5,554,199,541,234,582,188,563,235,625,197,623,284,696,288,697,393,429,371,419,355,419,131,493,130,490,70" shape="poly">
+                </map>
+            </div>
+        </main>
+
+        
+    </div>
+    <footer>
+        <p>&copy; &nbsp; Copyright - Benjamin Lefebvre 2021</p>
+    </footer>
+</body>
+
+</html>
