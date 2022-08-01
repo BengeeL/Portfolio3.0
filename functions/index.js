@@ -5,6 +5,7 @@ const app = express();
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 const dotenv = require("dotenv");
+const cors = require("cors")({origin: true});
 const ejs = require("ejs");
 dotenv.config();
 
@@ -12,6 +13,7 @@ dotenv.config();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.json());
+app.use(cors);
 
 // Import hidden variables.
 const CLIENT_EMAIL = process.env.EMAIL;

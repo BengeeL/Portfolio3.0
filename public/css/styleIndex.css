@@ -1,0 +1,151 @@
+body {
+  background-color: #2A363B;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Decoration Bubbles */
+.top-bubbles {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  animation-name: fadeAppearTop;
+  animation-duration: .7s;
+}
+
+.btm-bubbles {
+  position: fixed;
+  width: 260px;
+  top: 100%;
+  left: 100%;
+  margin-top: -380px;
+  margin-left: -220px;
+  animation-name: fadeAppearBtm;
+  animation-duration: .7s;
+}
+
+/* Business Card */
+.card {
+  background-color: #99B898;
+  text-align: center;
+  position: relative;
+  margin: 15% 25%;
+  padding: 4% 3%;
+  border-radius: 45px;
+  animation-duration: 1s;
+  animation-name: fadeAppearCard;
+  animation-delay: .4s;
+  animation-fill-mode: both;
+
+}
+
+/* Boutons */
+.btn-main-webiste {
+  margin-bottom: 7%;
+  padding: 3% 1% 3% 5%;
+}
+
+.btn-social {
+  display: inline-block;
+  font-size: 2.5rem;
+  border-radius: 45px;
+}
+
+.btn-social:hover {
+  background-color: #F4837D;
+  color: #fff;
+}
+
+/* Colums */
+.left-part {
+  line-height: 1.5rem;
+  text-align: right;
+}
+
+.right-part {
+  line-height: 1rem;
+  text-align: left;
+}
+
+/* Text */
+.name {
+  font-family: Poppins;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 0.5rem;
+  font-weight: 400;
+}
+
+.description {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+@media (max-width:768px) {
+  .card {
+    border-radius: 20px;
+  }
+  .btn-main-website {
+    padding: 3%;
+  }
+  .left-part {
+    margin-bottom: 20px;
+  }
+  .btn-social {
+    margin: 20px ;
+    border-radius: 20px;
+  }
+  .col1 {
+    text-align: right;
+  }
+  .col2 {
+    text-align: left;
+  }
+}
+
+/* Animations */
+@keyframes fadeAppearTop {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes fadeAppearBtm {
+  from {
+    width: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  to {
+    margin-top: -380px;
+    margin-left: -220px;
+    width: 260px;
+  }
+}
+
+@keyframes fadeAppearCard {
+  from {
+    opacity: 0;
+    transform: translate(0, -30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
