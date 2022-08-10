@@ -55,7 +55,6 @@ a {
 }
 
 .btn-social:hover {
-  background-color: #F4837D;
   color: #fff;
 }
 
@@ -94,22 +93,27 @@ a {
 @media (max-width:768px) {
   .card {
     border-radius: 20px;
+    margin: 15% 15%;
   }
   .btn-main-website {
-    padding: 3%;
+    padding: 2%;
   }
   .left-part {
     margin-bottom: 20px;
+    text-align: center;
+  }
+  .right-part {
+    text-align: center;
   }
   .btn-social {
     margin: 20px ;
     border-radius: 20px;
   }
   .col1 {
-    text-align: right;
+    text-align: center;
   }
   .col2 {
-    text-align: left;
+    text-align: center;
   }
 }
 
