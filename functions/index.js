@@ -207,9 +207,9 @@ app.route("/contact")
     });
 
 // PORT LISTEN 
-// const port = process.env.PORT || 3000;
-// const server = app.listen(port, () => {
-//     console.log(`server running on ${port}`)
-// })
+const port = process.env.PORT || 3000;
+const server = app.listen(port, () => {
+    console.log(`server running on ${port}`)
+})
 
 exports.app = functions.https.onRequest(app);

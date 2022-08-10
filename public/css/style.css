@@ -163,52 +163,6 @@ h5 {
   width: 100%;
 }
 
-/* Phone size modification */
-@media (max-width:768px) {
-  .vline {
-    border: none;
-  }
-  
-  .tline {
-    border: none;
-  }
-
-  .resume-img {
-    display: none;
-  }
-
-  .header {
-    height: 80vh;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-
-  }
-
-  .contact-img {
-    width: 70%;
-    padding-top: 15%;
-  }
-
-  .header-title {
-    font-size: 1.8rem;
-    margin: 0;
-    padding: 20vh 0 0;
-  }
-
-  .header-paragraph {
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .release-date {
-    font-size: 0.5rem;
-    line-height: 0.5;
-    margin-top: -1rem;
-  }
-}
-
 /* Animations */
 @keyframes bubbleAppear {
   from {
@@ -330,4 +284,51 @@ h5 {
 .link-resume:hover {
   text-decoration: none;
   color: #367DA2;
+}
+
+
+/* Phone size modification */
+@media (max-width:768px) {
+  .vline {
+    border: none;
+  }
+  
+  .tline {
+    border: none;
+  }
+
+  .resume-img {
+    display: none;
+  }
+
+  .header {
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+  }
+
+  .contact-img {
+    width: 70%;
+    padding-top: 15%;
+  }
+
+  .header-title {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 25vh 0 0;
+  }
+
+  .header-paragraph {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .release-date {
+    font-size: 0.5rem;
+    line-height: 0.5;
+    margin-top: -1rem;
+  }
 }
