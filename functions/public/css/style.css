@@ -112,6 +112,48 @@ h5 {
   padding: 10% 10%;
 }
 
+.container-fluid {
+  overflow: hidden;
+}
+
+.outer-circle {
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.circle {
+  left: 30%;
+  top: -65vw;
+  height: 100vw;
+  width: 100vw;
+  background-color: #F4837D;
+  border-radius: 50%;
+  position: absolute;
+  animation: bubbleAppear .7s;
+}
+
+.pink {
+  background-color: #F4837D;
+}
+
+.beige {
+  background-color: #FDCEAA;
+}
+
+.red {
+  background-color: #EB4960;
+}
+
+.green {
+  background-color: #99B898;
+}
+
+.bleu {
+  background-color: #367DA2;
+}
+
 .description {
   text-align: center;
 }
@@ -138,10 +180,10 @@ h5 {
 .bubble {
   position: absolute;
   top: 0;
-  left: 100%;
+  
   width: 70%;
   margin-left: -70%;
-  animation: bubbleAppear .7s;
+  
 }
 
 .resume-img {
@@ -166,13 +208,13 @@ h5 {
 /* Animations */
 @keyframes bubbleAppear {
   from {
-    width: 0;
-    margin-left: 0;
+    height: 10vw;
+    width: 10vw;
   }
 
   to {
-    width: 70%;
-    margin-left: -70%;
+    height: 100vw;
+    width: 100vw;
   }
 }
 
