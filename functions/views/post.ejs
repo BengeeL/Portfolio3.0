@@ -1,31 +1,32 @@
 <%- include("partials/header") -%>
 
 <body class="beige-theme">
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5798408924792660"
+    crossorigin="anonymous"
+  ></script>
+
   <div class="outer-circle">
     <span class="circle beige"></span>
   </div>
-  
-  <%- include("partials/navbar") -%>
 
+  <%- include("partials/navbar") -%>
 
   <!-- Arrival Section -->
   <div class="dark">
     <div class="container-fluid">
-    <div class="header">
+      <div class="header">
         <h1 class="header-title"><%= postTitle %></h1>
+      </div>
     </div>
-    </div>
-    </div>
+  </div>
 
-    <div class="light">
-        <div class="container-fluid">
-        <div class="section">
-            <%- postContent %>
-        </div>
-        </div>
+  <div class="light">
+    <div class="container-fluid">
+      <div class="section"><%- postContent %></div>
     </div>
+  </div>
 
-    
-
-  <%- include("partials/contactSection") -%>
-  <%- include("partials/footer") -%>
+  <%- include("partials/contactSection") -%> <%- include("partials/footer") -%>
+</body>

@@ -5,12 +5,9 @@
     <span class="circle beige"></span>
   </div>
 
-
-  <img class="bubble" src="images/beigeThemeCircle.png">
+  <img class="bubble" src="images/beigeThemeCircle.png" />
 
   <%- include("partials/navbar") -%>
-
-
 
   <!-- Arrival Section -->
   <div class="dark">
@@ -26,15 +23,16 @@
     <div class="container-fluid">
       <div class="section">
         <% postsList.forEach(post => { %>
-          <h2><%= post.title %></h2>
-          <p><%- post.content.substring(0,300) + " ..." %>
-            <a href="/blog/post/<%= post._id %>">Read More</a>
-          </p>
+        <h2><%= post.title %></h2>
+        <p>
+          <%- post.content.substring(0,300) + " ..." %>
+          <a href="/blog/post/<%= post._id %>">Read More</a>
+        </p>
+        <br><br>
         <% }); %>
       </div>
     </div>
   </div>
 
-
-  <%- include("partials/contactSection") -%>
-  <%- include("partials/footer") -%>
+  <%- include("partials/contactSection") -%> <%- include("partials/footer") -%>
+</body>

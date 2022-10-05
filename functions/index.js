@@ -34,7 +34,7 @@ const OAuth2Client = new google.auth.OAuth2(
 OAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
 // DB Connect 
-mongoose.connect("mongodb+srv://admin-benjamin:BengeeL12@cluster0.fiodryj.mongodb.net/blogPostDB");
+mongoose.connect("mongodb+srv://admin-benjamin:" + process.env.PASSWORD_MONGO + "@cluster0.fiodryj.mongodb.net/blogPostDB");
 
 // Schemas
 const postsSchema = {
@@ -208,8 +208,8 @@ app.route("/contact")
 
 // PORT LISTEN 
 const port = process.env.PORT || 3000;
-const server = app.listen(port, () => {
-    console.log(`server running on ${port}`)
-})
+// const server = app.listen(port, () => {
+//     console.log(`server running on ${port}`)
+// })
 
 exports.app = functions.https.onRequest(app);

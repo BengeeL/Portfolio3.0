@@ -116,6 +116,12 @@ h5 {
   overflow: hidden;
 }
 
+.contact-form {
+  animation: fadeAppear .7s;
+  animation-delay: .6s;
+  animation-fill-mode: both;
+}
+
 .outer-circle {
   overflow: hidden;
   position: absolute;
@@ -326,6 +332,14 @@ h5 {
 .link-resume:hover {
   text-decoration: none;
   color: #367DA2;
+}
+
+.code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #FDCEAA;
+  padding: 3% 1%;
+  margin: 2% 0;
+  width: 100%;
 }
 
 

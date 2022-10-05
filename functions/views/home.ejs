@@ -1,13 +1,10 @@
 <%- include("partials/header") -%>
 
-
 <body class="green-theme">
   <div class="outer-circle">
     <span class="circle green"></span>
   </div>
   <%- include("partials/navbar") -%>
-
-
 
   <!-- Arrival Section -->
   <div class="dark">
@@ -24,21 +21,26 @@
     <div class="container-fluid">
       <div class="section">
         <div class="description">
-          <img class="section-img" src="images/travel.webp" alt="travel-img">
           <h2>Hi!</h2>
-          <p>I'm Benjamin Lefebvre! A Software Engineer student with a diploma in Advertising and Marketing Communication.</p>
+          <p>
+            I'm Benjamin Lefebvre! A Software Engineer student with a diploma in
+            Advertising and Marketing Communication.
+          </p>
         </div>
 
-        <hr>
+        <hr />
 
         <h2>My Skills</h2>
         <div class="row">
           <div class="col-md-6 padding">
             <div class="card">
               <div class="card-body">
-                <h3 class="card-title"><i class="fas fa-code"></i> Front-End</h3>
-                <p class="card-text">HTML, CSS, Bootstrap, JavaScript, jQuery, React, and more.</p>
-                <a href="/resume" target="_blank" class="btn btn-primary btn-light">Learn more...</a>
+                <h3 class="card-title">
+                  <i class="fas fa-code"></i> Front-End
+                </h3>
+                <p class="card-text">
+                  HTML, CSS, Bootstrap, JavaScript, jQuery, React, and more.
+                </p>
               </div>
             </div>
           </div>
@@ -46,9 +48,12 @@
           <div class="col-md-6 padding">
             <div class="card">
               <div class="card-body">
-                <h3 class="card-title"><i class="fas fa-drafting-compass"></i> Back-End</h3>
-                <p class="card-text">Node, Python, MongoDB, SQL, Google Firebase, and more.</p>
-                <a href="/resume" target="_blank" class="btn btn-primary btn-light">Learn more...</a>
+                <h3 class="card-title">
+                  <i class="fas fa-drafting-compass"></i> Back-End
+                </h3>
+                <p class="card-text">
+                  Node, Python, MongoDB, SQL, Google Firebase, and more.
+                </p>
               </div>
             </div>
           </div>
@@ -56,10 +61,10 @@
           <div class="col-md-6 padding">
             <div class="card">
               <div class="card-body">
-                <h3 class="card-title"><i class="fas fa-bullhorn"></i> UI Design</h3>
+                <h3 class="card-title">
+                  <i class="fas fa-bullhorn"></i> UI Design
+                </h3>
                 <p class="card-text">Figma, Affinity Designer, and more.</p>
-                  <a href="/resume" target="_blank" class="btn btn-primary btn-light">Learn more...</a>
-
               </div>
             </div>
           </div>
@@ -68,20 +73,32 @@
             <div class="card">
               <div class="card-body">
                 <h3 class="card-title"><i class="fas fa-gem"></i> Branding</h3>
-                <p class="card-text">Work together to build your brand identity, and more.</p>
-                <a href="/resume" target="_blank" class="btn btn-primary btn-light">Learn more...</a>
-
+                <p class="card-text">
+                  Work together to build your brand identity, and more.
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col padding">
-            <a class="btn btn-dark btn-lg btn-portolio" href="/portfolio">SEE PORTFOLIO</a>
+            <a 
+            target="_blank"
+            class="btn btn-dark btn-lg btn-portolio" 
+            href="/portfolio"
+            >View projects</a
+            >
+            <a
+            href="/resume"
+            target="_blank"
+            class="btn btn-light btn-lg btn-portolio"
+            >Learn more...</a
+          >
           </div>
         </div>
       </div>
     </div>
 
-<%- include("partials/contactSection") -%>
-<%- include("partials/footer") -%>
-
+    <%- include("partials/contactSection") -%> <%- include("partials/footer")
+    -%>
+  </div>
+</body>
